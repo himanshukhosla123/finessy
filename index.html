@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finessy Portal</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        body{
+            color: #2b2b30;
+            background-color: #F1F1F1;
+        }
+        .carousel h2 , .carousel h3{
+            margin: 5px;
+            color:white;    
+        }
+        .carousel img{
+            width: 100%;
+        }
+        .carousel{
+            margin:20px 0px;
+            box-shadow:3px 3px 5px #ccc;
+            border-radius: 5px;
+        }
+        .main-slides{
+            background-color: white;
+            padding:50px;
+            margin-bottom: 20px;
+            border-radius:5px;
+            background-image: url('assets/img/doodles.png');
+            box-shadow:0px 0px 2px 2px #ccc;
+        }
+        .field .field-image img{
+            height:290px;
+            box-shadow:3px 3px 5px #ccc;
+            border-radius:5px;
+        }
+        .field{
+            margin-bottom:30px;
+        }
+        .field-image{
+            position: relative;
+        }
+        .field-caption{
+            position: absolute;
+            bottom: 0px;
+            width:100%;
+            border-top-left-radius:1px;
+            border-top-right-radius:1px;
+            padding:0px 10px;
+            font-family: cursive;
+            background-color:rgba(255,255,255,0.8);
+        }
+        .field-image:hover .field-caption{
+            background-color:white;
+        }
+        .field-image:hover{
+            transform:scale(1.05,1.05);
+            transition:0.5s;
+        }
+        .center{text-align: center;}
+        
+        .main-slides h1{
+            margin:30px 0px;
+            font-size:50px;
+            text-transform: capitalize;
+            background-color: white;
+        }
+        .field-caption span{
+            margin-right:10px;
+            font-size: 20px;
+        }
+        
+        .navbar-default{
+            background-color: white;
+            padding:15px 20px;
+            font-weight: bold;
+            margin-bottom: 0px;
+            box-shadow:1px 1px 5px #ccc;
+        }
+        .footer{
+            background-color:white;
+            padding:5px;
+            box-shadow:-1px -1px 5px #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+   
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="font-size:36px;color:#337AB7;font-weight:500;">Finessy</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active">
+        <a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Our Team</a></li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href=""><i class="fa fa-phone"></i> Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+       
+      
+       
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="assets/img/banner1.jpg" alt="">
+              <div class="carousel-caption">
+                  <h2>Step 1</h2>
+                 <h3>Connect to your interest</h3>
+                 <p>Evaluate yourself with our A.I to select your interest field.</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <img src="assets/img/banner2.jpg" alt="">
+              <div class="carousel-caption">
+                  <h2>Step 2</h2>
+                 <h3>Recommeded profile selection</h3>
+                 <p>Recommended profile choices with our A.I to increase better profile generations.</p>
+              
+              </div>
+            </div>
+            
+            <div class="item">
+              <img src="assets/img/banner3.jpg" alt="">
+              <div class="carousel-caption">
+                    <h2>Step 3</h2>
+                 <h3>Mapping with universities</h3>
+                 <p>Mapping of your profile with the available universities and states.</p>
+              </div>
+            </div>
+               
+            <div class="item">
+              <img src="assets/img/banner4.jpg" alt="">
+              <div class="carousel-caption">
+                    <h2>Step 4</h2>
+                 <h3>Geniuine review of intitution</h3>
+                 <p>Approved and genuine review of the instituions and there other services.</p>
+              </div>
+            </div>
+            
+            <div class="item">
+              <img src="assets/img/banner5.png" alt="">
+              <div class="carousel-caption">
+                    <h2>Step 5</h2>
+                 <h3>Personal chat and guidance with current student</h3>
+                 <p>Chat personally and take guidance and reviews from the current student of your selected institute.</p>
+              </div>
+            </div>
+            </div>
+
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+        
+        <div class="main-slides">
+            <div class="row">
+             
+           <h1 class="center">Choose your passion for constuctive life.</h1>
+             
+              <div class="field col-xs-6 col-sm-4 col-lg-3">
+                  <div class="field-image"><img src="assets/img/engineer.jpg" class="img-responsive" alt="">
+                  <div class="field-caption">
+                      <h4>Engineer                        <span class="pull-right"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span></h4>
+                  </div>
+                  </div>
+              </div>
+              <div class="field col-xs-6 col-sm-4 col-lg-3">
+                  <div class="field-image"><img src="assets/img/Doctor.jpg" class="img-responsive" alt="">
+                  <div class="field-caption">
+                      <h4>Doctor                        <span class="pull-right"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span></h4>
+                  </div>
+                  </div>
+              </div>
+              <div class="field col-xs-6 col-sm-4 col-lg-3">
+                  <div class="field-image"><img src="assets/img/lawyer.jpg" class="img-responsive" alt="">
+                  <div class="field-caption">
+                      <h4>Laywer                        <span class="pull-right"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span></h4>
+                  </div>
+                  </div>
+              </div>
+              <div class="field col-xs-6 col-sm-4 col-lg-3">
+                  <div class="field-image"><img src="assets/img/architecture.jpg" class="img-responsive" alt="">
+                  <div class="field-caption">
+                      <h4>Architecture                        <span class="pull-right"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span></h4>
+                  </div>
+                  </div>
+              </div>
+              
+              <div class="field col-xs-6 col-sm-4 col-lg-3">
+                  <div class="field-image"><img src="assets/img/Doctor.jpg" class="img-responsive" alt="">
+                  <div class="field-caption">
+                      <h4>Doctor                        <span class="pull-right"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span></h4>
+                  </div>
+                  </div>
+              </div>
+              <div class="field col-xs-6 col-sm-4 col-lg-3">
+                  <div class="field-image"><img src="assets/img/lawyer.jpg" class="img-responsive" alt="">
+                  <div class="field-caption">
+                      <h4>Lawyer                        <span class="pull-right"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span></h4>
+                  </div>
+                  </div>
+              </div>
+              <div class="field col-xs-6 col-sm-4 col-lg-3">
+                  <div class="field-image"><img src="assets/img/architecture.jpg" class="img-responsive" alt="">
+                  <div class="field-caption">
+                      <h4>Architecture                        <span class="pull-right"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span></h4>
+                  </div>
+                  </div>
+              </div>  
+              <div class="field col-xs-6 col-sm-4 col-lg-3">
+                  <div class="field-image"><img src="assets/img/artist.jpg" class="img-responsive" alt="">
+                  <div class="field-caption">
+                      <h4>Artist                        <span class="pull-right"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span></h4>
+                  </div>
+                  </div>
+              </div>
+                 
+                
+            </div>
+        </div>        
+        
+        </div>
+        
+        <div class="footer">
+            <h3 class="center">Copyright <i class="fa fa-copyright"></i> Finessy Pvt. Ltd.</h3>
+            
+        </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".field-image").click(function(){
+      alert("Dont fool me .. hehe !  :-)");
+  });    
+});  
+</script>                
+</body>
+
+</html>
