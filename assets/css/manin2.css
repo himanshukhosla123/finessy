@@ -1,0 +1,185 @@
+body{
+    /* color: #2b2b30; */
+    /* background-color: #F1F1F1;*/
+    background-color: #FAFBFC;
+    font-size: 16px;
+    color: #2e3d49;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Open Sans', sans-serif;
+}
+header .navbar-default .navbar-nav>li>a{
+    color:black;
+    font-weight: 100;
+}
+.box{
+    background-color: white;
+    /* margin:20px 0px; */
+    padding:50px 20px;
+    text-align:center;
+    /* box-shadow:0px 0px 10px 0px #ccc; */
+    /* border:1px dashed #0078CA; */
+    /* box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2); */
+    /* box-shadow: 1px 4px 4px 0px rgba(0,0,0,0.2); */
+    /* border-radius:10px;  */
+    position: relative;
+    overflow: hidden;
+     z-index:5; 
+}
+.box .wrapper{
+    content: "";
+     display: inline-block; 
+/*    display: none;*/
+    position:absolute;
+    width:100%;
+    height:180px;
+    top:-90px;
+    -webkit-transform: rotate(10deg) scale(1.3);
+    transform: rotate(10deg) scale(1.3);
+    background: #eafaff;
+/*    background: linear-gradient(270deg,#eafaff 0,#f7f7f7);*/
+/*    background: linear-gradient(-50deg,#eafaff 0,#5bc0de);*/
+    right:0;
+    z-index:-1;
+}
+.wrapper.invert_wrapper{
+    
+/*    background: linear-gradient(-50deg,#5bc0de 0,#eafaff);*/
+    -webkit-transform: rotate(-10deg) scale(1.3);
+    transform: rotate(-10deg) scale(1.3);
+}
+.box h1{
+    font-size: 42px; 
+    text-transform: capitalize;
+}
+
+.box h3{
+    font-size:28px; 
+    font-weight: 100; 
+    width:60%;
+    color: #2A5993;
+    margin: 30px auto 20px;
+    line-height:42px; 
+    /* color: #0078CA; */
+} 
+
+.navbar-default{
+    background-color: white;
+    padding:10px 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    box-shadow:1px 1px 5px #ccc;
+}
+.intro_box{
+    /* background-image: url('https://www.credit-suisse.com/careers/en/career-opportunities/_jcr_content/genericHeader/image.revampimg.1200.high.png/career-opportunities-header.png'); */
+/*            background-image: url('https://media.licdn.com/media/AAEAAQAAAAAAAAjcAAAAJDQyMTlmZDM3LWY2NGYtNDRlOC1iMDNjLTljZGY3ZGUwZTE1YQ.png');*/
+
+/*            background-image: url('https://www.credit-suisse.com/careers/de/career-opportunities/high-school-switzerland/_jcr_content/genericHeader/image.revampimg.1200.high.png/high-school-student-header.png');*/
+    
+/*            background-image: url('https://www.credit-suisse.com/careers/en/career-opportunities/students-and-graduates/_jcr_content/genericHeader/image.revampimg.1200.high.png/students-and-graduates-header.png');*/
+    padding: 100px 40px 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    color: white;
+    border: none;
+    animation:bg 10s infinite;
+}
+
+.box img{
+    min-height:300px;
+    /* width:300px;  */
+    
+    /* box-shadow:0px 0px 10px 0px #ccc; */
+    box-shadow: 4px 4px 8px 0 rgba(46,61,73,.4);
+    /* box-shadow: 1px 4px 4px 0px rgba(0,0,0,0.2); */
+}
+.intro_box h1{
+    font-size: 64px;
+}
+.intro_box h3{
+    color: white;
+    margin: 30px auto;
+    line-height:38px; 
+}
+@keyframes bg{
+    0%{  background-image: url('https://www.credit-suisse.com/careers/en/career-opportunities/_jcr_content/genericHeader/image.revampimg.1200.high.png/career-opportunities-header.png');
+    }
+    25%{background-image: url('https://media.licdn.com/media/AAEAAQAAAAAAAAjcAAAAJDQyMTlmZDM3LWY2NGYtNDRlOC1iMDNjLTljZGY3ZGUwZTE1YQ.png');    
+    }
+    50%{background-image: url('https://www.credit-suisse.com/careers/de/career-opportunities/high-school-switzerland/_jcr_content/genericHeader/image.revampimg.1200.high.png/high-school-student-header.png');
+    }
+    75%{background-image: url('https://www.credit-suisse.com/careers/en/career-opportunities/students-and-graduates/_jcr_content/genericHeader/image.revampimg.1200.high.png/students-and-graduates-header.png');
+    }
+    100%{ background-image: url('https://www.credit-suisse.com/careers/en/career-opportunities/_jcr_content/genericHeader/image.revampimg.1200.high.png/career-opportunities-header.png');
+    }
+}
+
+@keyframes carrier{
+    0%{background-image: url('https://media.licdn.com/media-proxy/ext?w=800&h=800&hash=0zOZiY5U9zzB%2BHXKiTGNH6bTiV8%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6nlh8Tw1It6a2FowGz60oISIfYC2G8G2f1spyfNT-tdoDSfrKhsgUbfywBhlI_IfnwEXO5H8v_YfSNKKAL8u-RMZKWcBAEakU1rVoX_5RpHzIy58zjVs-2bzxPj70dPwy8FZvKU2o7ARc67culf4vOGGg3-2a9CIrCAe1zSrY398wK8QhFq9XzLNMm7Ys_nn1anHzrse_PHBw4wZOZP2iOSnQ_GDbRba5Ah5e_wjeMmlXm1xvfsJWUH4uUSqtkwXOHxLfZJyyPrHFRukxD6QAPnuAgFniHrQ');}
+    33%{background-image: url('https://previews.123rf.com/images/llesia/llesia1510/llesia151000087/46550687-Graduation-male-student-make-career-choices-businessman-doctor-artist-designer-cook-police-teacher-p-Stock-Vector.jpg');}
+    67%{background-image: url('https://image.shutterstock.com/z/stock-vector-man-standing-at-road-sign-with-two-career-pathways-entrepreneur-and-employee-man-choosing-career-524237722.jpg');}
+    100%{background-image: url('https://previews.123rf.com/images/llesia/llesia1510/llesia151000087/46550687-Graduation-male-student-make-career-choices-businessman-doctor-artist-designer-cook-police-teacher-p-Stock-Vector.jpg');}
+}
+.btn.primary{
+    border-color: #0078CA;
+    color: #fff;
+    min-width: 225px;
+    font-size: 20px;
+    padding:15px 0px;
+    border-width: 2px;
+    font-weight: 200;
+    border-radius: 0px;
+    border-radius: 50px;
+    background-color: #0078CA;
+}
+.btn.primary:hover{
+    background-color:white;
+    color: #0078CA;
+    transition: background 0.25s ease-out;
+    transition-timing-function:ease-in;
+}
+.btn.info{
+    border-color:#0078CA; 
+}
+hr{
+    border: 1px solid black;
+    border-radius:50%;
+    margin:0px 20px;
+}
+h3.see_more{
+    font-size:24px;
+    margin-bottom: 20px; 
+}
+.see_more .fa{
+    font-size:40px;
+}
+.marginTop50,h3.marginTop50{
+    margin-top:50px;
+}
+.nopadding{
+    padding-bottom:20px;
+}
+
+footer{
+    background-color:  rgb(204, 222, 229);
+    padding:10px 20px;
+    color: black;
+}
+footer div{
+    padding: 5px;
+}
+.fa-facebook,.fa-twitter{
+    color: white;
+    padding:10px;
+    font-size:20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.fa-facebook{background-color: blue;}
+.fa-twitter{background-color: lightblue;}
+.border-right{
+    border-right: 1px solid black;
+    min-height: 150px;
+    
+}
