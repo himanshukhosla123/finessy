@@ -1,0 +1,329 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E9EBEE;
+    user-select: none;
+}
+header .navbar{
+    background-color: transparent;
+    padding: 5px 0px;
+    margin-bottom: 0px;
+    background-color: white;
+}
+header .navbar-default .navbar-nav>li>a{
+    color:black;
+    font-weight: 100;
+}
+@media (min-width: 1200px)
+{.container {
+    width: 1199px;
+}
+}
+
+.events_list{
+    height:60px;
+    overflow: auto;
+}
+.events_list .event{
+    font-size: 15px;
+    text-transform: capitalize;
+    margin: 0px;
+    padding: 5px 10px;
+    color: blue;
+    padding-left:30px;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    /* text-shadow:3px 1px 5px rgba(169,81,237,0.9); */
+}
+
+.box{
+    border-radius: 10px;
+    background-color:white;
+    margin: 10px;
+    /* min-height: 100px; */
+    box-shadow: 12px 15px 20px 0 rgba(46,61,73,.15);
+    transition: all .3s ease;
+}
+
+.news_box .box-header:first-child .fa{
+    font-size:22px;
+} 
+.news_container{
+    background-color: transparent;
+    height: 480px;
+    overflow: auto;
+}
+.news_card{
+     border:1px solid #ccc;
+     padding: 0px 10px;
+     margin: 30px;
+}
+.news_card h3{
+    margin: 10px 0px;
+    text-transform: capitalize;
+}
+
+
+
+.paddinglr10{
+    padding: 0px 10px;
+}
+.chat_box{
+    border-radius: 5px;
+    border-top:3px solid #f39c12;
+    overflow:hidden 
+}
+.box-header>.fa, .box-header>.glyphicon, .box-header>.ion, .box-header .box-title {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1;
+}
+.box-header .box-title{
+    font-weight: 600;
+}
+.box-header {
+    color: #444;
+    display: block;
+    padding:10px;
+    position: relative;
+}
+.box-header>.box-tools {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.box-header.with-border{
+    border-bottom: 2px solid #f4f4f4;
+    /* border-color: #ccc; */
+}
+.btn-box-tool {
+    padding: 5px;
+    font-size: 12px;
+    background: transparent;
+    color: #97a0b3;
+}
+.box-body{
+    position: relative;
+}
+.direct-chat-messages {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    padding: 10px;
+    height: 210px;
+    overflow:auto;
+}
+.direct-chat-msg {
+    padding-right: 20%; 
+    margin-bottom: 10px;
+}
+
+.direct-chat-msg.right{
+    padding-left: 20%;
+    padding-right: 0px;
+}
+.direct-chat-info {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 12px;
+}
+.direct-chat-img {
+    border-radius: 50%;
+    float: left;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+.direct-chat-text {
+    border-radius: 5px;
+    position: relative;
+    padding: 5px 10px;
+    background: #d2d6de;
+    border: 1px solid #d2d6de;
+    margin: 5px 0 0 50px;
+    color: #444;
+}
+.direct-chat-text:before {
+    border-width: 6px;
+    margin-top: -6px;
+}
+.direct-chat-text:after {
+    border-width:5px;
+    margin-top:-5px;
+}
+.direct-chat-text:after,.direct-chat-text:before {
+    position: absolute;
+    right: 100%;
+    top: 15px;
+    border: solid transparent;
+    border-right-color: #d2d6de;
+    content: ' ';
+    height: 0;
+    width: 0;
+    pointer-events: none;
+}
+.right .direct-chat-img {
+    float: right;
+}
+.right .direct-chat-text{
+    text-align: right;
+}
+
+
+.direct-chat-warning .right>.direct-chat-text {
+    background: #f39c12;
+    border-color: #f39c12;
+    background: #0078CA;
+    border-color: #0078CA;
+    color: #fff;
+}
+.right .direct-chat-text {
+    margin-right: 50px;
+    margin-left: 0;
+}
+
+.box-footer {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top: 1px solid #f4f4f4;
+    padding: 10px;
+    background-color: #fff;
+}
+.box .col-xs-12{
+    min-height:0px;
+}
+.direct-chat-contacts-open .direct-chat-contacts {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.direct-chat-contacts {
+    -webkit-transform: translate(110%, 0);
+    -ms-transform: translate(110%, 0);
+    -o-transform: translate(110%, 0);
+    transform: translate(110%, 0);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 250px;
+    width: 100%;
+    background: #222d32;
+    color: #fff;
+    overflow: auto;
+}
+.direct-chat-messages, .direct-chat-contacts {
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    -moz-transition: -moz-transform .5s ease-in-out;
+    -o-transition: -o-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+}
+.contacts-list, .users-list, .mailbox-attachments {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.contacts-list>li {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 10px;
+    margin: 0;
+}
+.contacts-list-img {
+    border-radius: 50%;
+    width: 40px;
+    float: left;
+}
+.contacts-list-info {
+    margin-left: 45px;
+    color: #fff;
+}
+.contacts-list-name, .contacts-list-status {
+    display: block;
+    font-weight:600; 
+}
+.contacts-list-date {
+    color: #aaa;
+    font-weight: normal;
+}
+.contacts-list-msg {
+    color: #999;
+}
+
+
+.direct-chat .sort-by{
+    padding: 5px;
+}
+.sort-by .box-title{
+    font-weight: 500;
+}
+
+
+.text-orange{
+    color:white;
+    background: orange;
+}
+.text-yellow,{
+    color: rgb(255,162,52);
+}
+.shadow-yellow{
+    box-shadow: 4px 4px 14px 1px rgba(255,162,52,.8);
+}
+.shadow-violet{
+    box-shadow: 4px 4px 14px 1px rgba(169,81,237, 0.80);
+}
+.shadow-pink{
+    box-shadow: 4px 4px 14px 1px rgba(255,84,131,.8);
+}
+.shadow-green{
+    box-shadow: 4px 4px 14px 1px rgba(2,204,186,.8);
+}
+.text-violet{
+    color: rgb(169,81,237);
+}
+.text-green{
+    color:rgb(2,204,186) ;
+}
+.text-pink{
+    color: rgb(255,84,131);
+}
+.text-online{
+    color: green;
+}
+
+
+
+
+
+
+
+
+
+
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar
+{
+	width:6px;
+	background-color: #F5F5F5;
+}
+body::-webkit-scrollbar{
+    width:10px;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	background-color: #0ae;
+	border-radius:30px;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	                   color-stop(.5, rgba(255, 255, 255, .2)),
+					   color-stop(.5, transparent), to(transparent));
+}
+

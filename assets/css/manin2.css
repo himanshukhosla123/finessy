@@ -135,7 +135,7 @@ header .navbar-default .navbar-nav>li>a{
 .btn.primary:hover{
     background-color:white;
     color: #0078CA;
-    transition: background 0.25s ease-out;
+    transition: all 0.25s ease-out;
     transition-timing-function:ease-in;
 }
 .btn.info{
