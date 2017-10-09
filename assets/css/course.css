@@ -1,6 +1,7 @@
 body{
     font-size: 16px;
 /*    color:#2e3d49;*/
+    
     font-family: 'Open Sans', sans-serif;
 /*    background-color: #E9EBEE;*/
     
@@ -15,7 +16,7 @@ body{
 .current_course{
     background: #1C262F;
     color: white;
-    padding:28px 0px;
+    padding: 10px;
     margin:0px;
     font-size:40px;
 }
@@ -65,6 +66,7 @@ body{
     box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
     padding:10px 10px;
     border-radius: 5px;
+    margin:20px 0; 
     background-color: white;
 }
 .posts .post_img img{
@@ -77,4 +79,30 @@ body{
 }
 .posts .post_desc h4{
     font-weight:600;
+}
+
+/********************************************course 2 css******************************************************/
+.info_row{
+    padding:50px 0px;
+}
+.info_row .text-box p{
+    max-height:90px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    padding:0px 30px;
+}
+.info_row.left .text-box{
+    float:right; 
+}
+.course_info{
+    padding: 30px 0px;
+}
+.border-bottom{
+    border-bottom: 1px solid #ccc;
+}
+.nav{
+    margin-top: 20px;
+}
+.nav>li>a{
+    padding: 20px;
 }
